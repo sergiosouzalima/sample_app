@@ -2,7 +2,7 @@
   width: 710px;
 }
 body {
-  background: #cff;
+  background: #BF7330;
 }
 #header {
   padding-top: 20px;
@@ -107,7 +107,7 @@ td.sidebar {
   width: 30%;
   padding: 1em;
   vertical-align: top;
-  background: #ffc;
+  background: #ffb573; ///#ffc;
 }
 .profile img.gravatar {
   border: 1px solid #999;
