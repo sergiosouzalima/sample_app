@@ -56,6 +56,8 @@ class User < ActiveRecord::Base
   
   default_scope :order => 'users.created_at'
   
+  scope :admin, where(:admin => true)
+  
   # Return true if the user's password matches the submitted password.
   def has_password?(submitted_password)
     # Compare encrypted_password with the encrypted version of
@@ -88,7 +90,8 @@ class User < ActiveRecord::Base
   
   def feed
     # This is preliminary. See Chapter 12 for the full implementation.
-    Micropost.where("user_id = ?", id)
+    #Micropost.where("user_id = ?", id)
+    Micropost.from_users_followed_by(self)
   end  
   
   private
