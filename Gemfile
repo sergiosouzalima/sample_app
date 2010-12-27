@@ -3,7 +3,6 @@ gem 'rails', '3.0.0'
 gem 'gravatar_image_tag'
 gem 'will_paginate', '>=3.0.pre'
 
-
 group :production do
   gem 'pg'
 end
