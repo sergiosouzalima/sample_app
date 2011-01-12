@@ -1,2 +1,2 @@
 #! /bin/bash
-phd $0 sample_app sampleapplication.webbyapp.com
+phd $0 sample_app zeroxyz.webbyapp.com
