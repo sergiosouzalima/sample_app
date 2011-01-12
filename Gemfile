@@ -8,11 +8,13 @@ group :production do
   gem 'pg'
 end
 
+
 group :development do
   gem 'sqlite3-ruby', '1.2.5', :require => 'sqlite3'
   gem 'annotate-models'
   gem 'faker', '0.3.1'
 end
+
 
 group :test do
     gem 'sqlite3-ruby', '1.2.5', :require => 'sqlite3'
